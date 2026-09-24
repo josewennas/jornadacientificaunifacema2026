@@ -1,0 +1,502 @@
+/* Fonte padrão */
+body {
+  margin: 0;
+  font-family: "Host Grotesk", sans-serif;
+
+  /* background-color: #eceacd;*/
+  background-color:#0F3D59;
+   /*color: #002d40;*/
+  color: #A9D9CB;
+  line-height: 1.6;
+}
+
+
+
+/* Cabeçalho */
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /* logo à esquerda, menu/hamburguer à direita */
+  align-items: center;
+  background:  #001822;
+  padding: 10px 5%;
+  position: relative;
+  z-index: 1000;
+}
+
+.cabecalho .logo img {
+  height: 50px;
+}
+
+.box-caxias {
+  border: 1px solid #959595; /* espessura, tipo e cor da borda */
+  border-radius: 0px;
+  padding: 10px;           /* espaço interno */
+  width: auto;
+  margin: 0px 0px 5px 0px;
+}
+
+/* Logo menor */
+.cabecalho .logo img {
+  height: 40px; /* diminui a altura da logo */
+  max-width: 100%;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #F21F0C;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* Conteúdo */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  /*padding: 40px 5%;*/
+  padding: 20px 5% 0px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*padding: 40px 5%;*/
+  padding: 20px 5% 0px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sobre {
+  flex: 2;
+
+}
+
+.sobre h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.programacao {
+  flex: 1;
+  text-align: center;
+}
+
+.itensparadowloads {
+  /* display: flex;*/
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.itensparadowloadspagdeapresentacao {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.itensparadowloads a{
+  padding: 2em;
+  text-transform: uppercase;
+  
+}
+
+.part0{
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  margin: 0em 0em 2em 0em;
+
+}
+
+.part1{
+  width: 50%;
+
+}
+
+.part2{
+  width: 50%;
+
+}
+.downloads{
+  flex: 1;
+  text-align: center;
+}
+
+.downloads h2{
+    font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.programacao h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.btn-prog {
+  display: block;
+  background: #A9D9CB;
+  color:#0F3D59;
+  font-weight: 900;
+  
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cronogramadeinscricao{
+  background: #A9D9CB;
+  color:#0F3D59;
+  border-radius: 0px;
+  padding: 0px 0px 0px 1em;
+  width: auto;
+
+}
+
+.btn-prog:hover {
+  background:  #72f8d0;
+}
+
+.btn-baixeoedital{
+  display: block;
+  background: #A9D9CB;
+  color:#0F3D59;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-baixeoedital:hover {
+  background:  #72f8d0;
+}
+.btn-inscricao {
+  display: block;
+  background:  #F21F0C;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+
+.btn-inscricao:hover {
+  background: #ff3c00;
+}
+
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin: 0px 40px 40px 40px;
+}
+
+.cta a {
+  display: inline-block;
+  background:  #F21F0C;
+  color: #fff;
+  font-weight: 800;
+  padding: 20px 40px;
+  border-radius: 0px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background: #ff3c00;
+}
+
+/* Rodapé */
+.rodape {
+  background: #001822;
+  color: #fff;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.rodape .logo-rodape img {
+  height: 50px;
+}
+
+.rodape .info {
+  flex: 1;
+  margin: 10px 0;
+}
+
+.rodape .campi {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+
+.cta { animation: pulse 2s infinite;}
+@keyframes pulse{
+0%, 100%{transform: scale(1);}
+15% { transform: scale(1.1);}
+}
+
+.btn-inscricao {
+  animation: pulse 2s infinite;}
+@keyframes pulse{
+0%, 100%{transform: scale(1);}
+15% { transform: scale(0.9);}
+
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .programacao {
+    margin-top: 0px;
+  }
+
+  .downloads{
+        margin-top: 0px;
+  }
+
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rodape .campi {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+/* Hamburguer alinhado à direita */
+.hamburguer {
+  display: none; /* aparece só no mobile */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburguer .bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+
+/* estado ativo -> anima para X */
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* comportamento mobile */
+@media (max-width: 768px) {
+
+  /* mostra o botão */
+  .hamburguer {
+    display: flex;
+  }
+
+  /* esconde o menu padrão (desktop) */
+  .menu {
+    display: none; /* será exibido quando .ativo for aplicado */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px; /* ajusta conforme a altura do header */
+    background: #003d55;
+    z-index: 1100;
+    padding: 12px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-bottom: 4px solid rgba(255,255,255,0.03);
+  }
+
+  /* quando ativo mostrar */
+  .menu.ativo {
+    display: block;
+  }
+
+  /* lista vertical no menu mobile */
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .menu ul li a:hover {
+    background: rgba(255,255,255,0.03);
+  }
+
+  /* opcional: garantir que o header tenha posição relativa */
+  .cabecalho {
+    position: relative;
+  }
+}
+
+/* Desktop: mostra menu normal */
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Mobile: esconde menu, mostra hamburguer */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* some menu no mobile */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #003d55;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .menu.ativo {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburguer {
+    display: flex; /* aparece o botão hamburguer */
+  }
+
+  .part0{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  margin: 0em 0em 2em 0em;
+
+}
+
+.part1{
+  width: 100%;
+
+}
+
+.part2{
+  width: 100%;
+
+}
+}
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+
